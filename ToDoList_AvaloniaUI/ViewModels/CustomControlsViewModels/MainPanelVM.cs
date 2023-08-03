@@ -36,6 +36,8 @@ namespace ToDoList_AvaloniaUI.ViewModels.CustomControlsViewModels
             var item = new ToDoItemVM(result, removeItem);
 
             ToDoItems.Add(item);
+
+            await SerializationHelper.SaveItemsAsync(ToDoItems);
         }
 
         private ICommand removeItem = null!;
@@ -55,6 +57,7 @@ namespace ToDoList_AvaloniaUI.ViewModels.CustomControlsViewModels
             if (item.IsChecked) 
             {
                 ToDoItems.Remove(item);
+                await SerializationHelper.SaveItemsAsync(ToDoItems);
             }
         }
 

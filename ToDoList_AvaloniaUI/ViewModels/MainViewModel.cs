@@ -10,11 +10,6 @@ public partial class MainViewModel : ViewModelBase
 
     public MainViewModel(Window window)
     {
-        Context = new(
-            new(Enumerable.Range(1, 15)
-                .Select(
-                    x => new ToDoItemVM(x.ToString()))),
-            window);
-
+        Context = new(SerializationHelper.LoadItems(), window);
     }
 }
