@@ -1,0 +1,48 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Design.PreviewWith>
+    <StackPanel>
+      <Border Classes="TodoItemBorder">
+        <CheckBox Classes="TodoItemCheckBox"
+          Content="Lorem ipsum dolor sit amet"/>
+      </Border>
+      <Border Classes="TodoItemBorder">
+        <CheckBox Classes="TodoItemCheckBox"
+          Content="Lorem ipsum dolor sit amet"/>
+      </Border>
+      <Border Classes="TodoItemBorder">
+        <CheckBox Classes="TodoItemCheckBox"
+          Content="Lorem ipsum dolor sit amet"/>
+      </Border>
+    </StackPanel>    
+  </Design.PreviewWith>
+  
+  <Style Selector="Border.TodoItemBorder">
+    <Setter Property="Background" Value="Tan"/>
+    <Setter Property="MinWidth" Value="100"/>
+    <Setter Property="MaxHeight" Value="115"/>
+    <Setter Property="BorderThickness" Value="2"/>
+    <Setter Property="CornerRadius" Value="5"/>
+    <Setter Property="BoxShadow" Value="0 0 5 1 BurlyWood"/>
+    <Setter Property="Margin" Value="10"/>
+    <Setter Property="Padding" Value="5"/>
+  </Style>
+
+  <Style Selector="CheckBox.TodoItemCheckBox">
+    <Setter Property="FontSize" Value="25"/>
+    <Setter Property="FontWeight" Value="DemiBold"/>
+    <Setter Property="Foreground" Value="Black"/>
+    <Setter Property="MaxWidth" Value="1000"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+ </Style>
+
+  <Style Selector="CheckBox.TodoItemCheckBox /template/ Grid > Grid">
+    <Setter Property="VerticalAlignment" Value="Center"/>
+  </Style>
+
+  <Style Selector="CheckBox.TodoItemCheckBox:checked TextBlock">
+    <Setter Property="TextDecorations" Value="Strikethrough"/>
+  </Style>
+</Styles>

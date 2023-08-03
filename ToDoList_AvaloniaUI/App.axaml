@@ -1,0 +1,16 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ToDoList_AvaloniaUI.App"
+             RequestedThemeVariant="Light">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Styles>
+        <FluentTheme />
+      <StyleInclude Source="avares://ToDoList_AvaloniaUI/Styles/MainPanelStyle.axaml"/>
+      <StyleInclude Source="avares://ToDoList_AvaloniaUI/Styles/TodoItemStyle.axaml"/>
+    </Application.Styles>
+  
+  <Application.Resources>
+    <FontFamily x:Key="NunitoFont">avares://ToDoList_AvaloniaUI/Assets/Fonts#Nunito</FontFamily>
+  </Application.Resources>
+</Application>

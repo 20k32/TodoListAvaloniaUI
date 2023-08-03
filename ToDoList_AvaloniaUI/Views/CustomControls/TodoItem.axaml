@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:ToDoList_AvaloniaUI.ViewModels.CustomControlsViewModels"
+             x:DataType="vm:ToDoItemVM"
+             mc:Ignorable="d"
+             x:Class="ToDoList_AvaloniaUI.Views.CustomControls.TodoItem">
+
+  <Border Classes="TodoItemBorder">
+    <CheckBox 
+      x:CompileBindings="False"
+      Command="{Binding DeleteCommand}"
+      CommandParameter="{Binding .}"
+      IsChecked="{Binding IsChecked}"
+      Classes="TodoItemCheckBox">
+      <ScrollViewer 
+        VerticalScrollBarVisibility="Auto"
+        HorizontalScrollBarVisibility="Disabled">
+        <TextBlock 
+          Text="{Binding InnerText}"/>
+      </ScrollViewer>
+    </CheckBox>
+  </Border>
+ 
+</UserControl>

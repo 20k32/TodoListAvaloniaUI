@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList_AvaloniaUI", "ToDoList_AvaloniaUI\ToDoList_AvaloniaUI.csproj", "{1DC739BB-FE5E-4CB6-8013-EABA1E9847B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList_AvaloniaUI.Desktop", "ToDoList_AvaloniaUI.Desktop\ToDoList_AvaloniaUI.Desktop.csproj", "{2BAA1227-EB10-4EE1-A643-79BC40312678}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DC739BB-FE5E-4CB6-8013-EABA1E9847B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC739BB-FE5E-4CB6-8013-EABA1E9847B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC739BB-FE5E-4CB6-8013-EABA1E9847B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC739BB-FE5E-4CB6-8013-EABA1E9847B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BAA1227-EB10-4EE1-A643-79BC40312678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAA1227-EB10-4EE1-A643-79BC40312678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAA1227-EB10-4EE1-A643-79BC40312678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAA1227-EB10-4EE1-A643-79BC40312678}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42326025-E39C-4037-AA7D-D75853E74BAC}
+	EndGlobalSection
+EndGlobal

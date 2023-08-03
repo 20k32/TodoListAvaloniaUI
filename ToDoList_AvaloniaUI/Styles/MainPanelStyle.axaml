@@ -1,0 +1,63 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  
+  <Design.PreviewWith>
+    <StackPanel Classes="MainPanel">
+      <Border>
+        <Button Classes="Add" Content="Add"/>
+      </Border>
+      <Border>
+        <Button Classes="SubmitNote" Content="SubmitNode"/>
+      </Border>
+      <Border>
+        <Button Content="Add"/>
+      </Border>
+      <TextBox Text="hell to world"/>
+    </StackPanel>
+
+  </Design.PreviewWith>
+  
+  <Style Selector="Button">
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+    <Setter Property="Margin" Value="5"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
+    <Setter Property="Height" Value="50"/>
+  </Style>
+
+  <Style Selector="Button.Add">
+    <Setter Property="Background" Value="LightGreen"/>
+  </Style>
+
+  <Style Selector="Button.Add:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="Green"/>
+    <Setter Property="Foreground" Value="White"/>
+  </Style>
+
+  <Style Selector="Button.SubmitNote:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="LimeGreen"/>
+    <Setter Property="Foreground" Value="Black"/>
+  </Style>
+  
+  <Style Selector="Button.SubmitNote">
+    <Setter Property="Background" Value="ForestGreen"/>
+    <Setter Property="Foreground" Value="White"/>
+  </Style>
+  
+  <Style Selector="StackPanel.MainPanel">
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="MinWidth" Value="400"/>
+    <Setter Property="MinHeight" Value="600"/>
+    <Setter Property="Margin" Value="5"/>
+    <Setter Property="Spacing" Value="10"/>
+  </Style>
+
+  <Style Selector="TextBox:focus-within Border">
+    <Setter Property="Background" Value="LightGoldenrodYellow"/>
+    <Setter Property="BorderBrush" Value="#99000000"/>
+    <Setter Property="CornerRadius" Value="3"/>
+  </Style>
+
+</Styles>

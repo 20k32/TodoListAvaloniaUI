@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ToDoList_AvaloniaUI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:ToDoList_AvaloniaUI.Views"
+        xmlns:control="clr-namespace:ToDoList_AvaloniaUI.Views.CustomControls"
+        xmlns:localization="clr-namespace:ToDoList_AvaloniaUI.Assets"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ToDoList_AvaloniaUI.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ToDoList_AvaloniaUI"
+        x:CompileBindings="False"
+        MinHeight="737" MinWidth="500"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal"
+        FontFamily="{StaticResource NunitoFont}"
+        FontSize="20"
+        Background="{x:Null}"
+        TransparencyLevelHint="AcrylicBlur"
+        VerticalContentAlignment="Center">
+  
+  <control:MainPanel DataContext="{Binding Context}"/>
+
+
+</Window>

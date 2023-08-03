@@ -1,0 +1,38 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:ToDoList_AvaloniaUI.ViewModels.CustomControlsViewModels"
+             xmlns:view="using:ToDoList_AvaloniaUI.Views.CustomControls"
+             x:DataType="vm:MainPanelVM"
+             xmlns:control="clr-namespace:ToDoList_AvaloniaUI.Views.CustomControls"
+             mc:Ignorable="d"
+             x:Class="ToDoList_AvaloniaUI.Views.CustomControls.MainPanel"
+             x:Name="parentView">
+  <Grid 
+    MaxWidth="1000"
+    RowDefinitions="*, Auto">
+
+    <ScrollViewer 
+      VerticalScrollBarVisibility="Auto">
+        <StackPanel
+          Classes="MainPanel"
+          Grid.Row="0">
+          <ItemsControl ItemsSource="{Binding ToDoItems}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate>
+               <view:TodoItem
+                 DataContext="{Binding .}"/>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+    </ScrollViewer>
+
+    <Button
+        Grid.Row="1"
+        Classes="Add"
+        Content="Add" 
+        Command="{Binding AddToItems}"/>
+  </Grid>
+</UserControl>

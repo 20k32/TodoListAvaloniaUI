@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="ToDoList_AvaloniaUI.Views.CustomControls.AddItem"
+        Title="AddItem"
+        WindowStartupLocation="CenterOwner"
+        MinHeight=" 106"
+        MinWidth="300"
+        Height="300"
+        Width="500"
+        MaxHeight="300"
+        MaxWidth="500"
+        WindowState="Normal"
+        x:Name="Window"
+        Background="PaleGoldenrod">
+  <Grid 
+    RowDefinitions="*, Auto"
+    HorizontalAlignment="Stretch">
+    <ScrollViewer
+      Grid.Row="0"
+      VerticalScrollBarVisibility="Auto">
+      <TextBox
+        x:Name="NoteTextBox"
+        Margin="5, 5, 5, 0"
+        Watermark="Your note ..." 
+        AcceptsReturn="True"
+        TextWrapping="Wrap"
+        VerticalAlignment="Stretch"
+        FontSize="20"
+        Focusable="True"/>
+    </ScrollViewer>
+    <Button
+      Classes="SubmitNote"
+      Grid.Row="1"
+      Content="Submit"
+      Click="AddButton_Click"/>
+  </Grid>
+</Window>
